@@ -1,0 +1,1 @@
+Esse repositório é de uma aplicação web feita em Golang (Go) de uma loja, onde é possível vizualizar os produtos e suas informações (nome, descrição, preço e quantidade), adicionar itens, deletar itens. 
