@@ -1,15 +1,12 @@
 package routes
 
 import (
-	"module/controllers"
-	"net/http"
+	"module/routes/rotas"
+
+	"github.com/gorilla/mux"
 )
 
-func CarregaRotas() {
-	http.HandleFunc("/", controllers.Index)
-	http.HandleFunc("/new", controllers.New)
-	http.HandleFunc("/insert", controllers.Insert)
-	http.HandleFunc("/delete", controllers.Delete)
-	http.HandleFunc("/edit", controllers.Edit)
-	http.HandleFunc("/update", controllers.Update)
+func GerarRotas() *mux.Router {
+	r := mux.NewRouter()
+	return rotas.Configurar(r)
 }
